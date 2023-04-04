@@ -10,5 +10,3 @@ do {
     $false
 ) 
 Write-Host "[Script] Script End"
-
-#cvlc http://192.168.198.38:8080/ --sout #transcode{vcodec=MJPG,venc=ffmpeg{strict=1}}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=:8080/}
