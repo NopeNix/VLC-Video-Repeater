@@ -1,3 +1,4 @@
+[![Build and Push to Docker Hub](https://github.com/NopeNix/VLC-Video-Repeater/actions/workflows/Build%20and%20Push%20to%20Docker%20Hub.yml/badge.svg)](https://github.com/NopeNix/VLC-Video-Repeater/actions/workflows/Build%20and%20Push%20to%20Docker%20Hub.yml)
 # VLC-Video-Repeater
 
 This Comtainer can read any stream VLC can read and acceppts multiple clients.
