@@ -1,0 +1,10 @@
+name: Build and Push to Docker Hub
+run-name: Build and Push to Docker Hub 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Build and push Docker images
+          uses: docker/build-push-action@v4.0.0
+      
