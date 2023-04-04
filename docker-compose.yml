@@ -1,0 +1,14 @@
+version: "3"
+services:
+  repeater01:
+    build: .
+    #image: nopenix/vnc-video-repeater
+    environment:
+      - SourceURL=http://192.168.198.38:8080/
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["pwsh", "/app/check.ps1"]
+      interval: 1s
+      timeout: 1s
+      retries: 30
