@@ -9,6 +9,6 @@ services:
       - 8080:8080
     healthcheck:
       test: pwsh /app/check.ps1
-      interval: 1s
-      timeout: 1s
-      retries: 30
+      interval: 10s
+      timeout: 10s
+      retries: 3

@@ -16,8 +16,8 @@ services:
       - 8080:8080
     healthcheck: # Healthcheck is mandatory for the container to work propperly (especially reconnects!)
       test: pwsh /app/check.ps1
-      interval: 1s
-      timeout: 1s
-      retries: 30
+      interval: 10s
+      timeout: 10s
+      retries: 3
     restart: unless-stopped
 ```
