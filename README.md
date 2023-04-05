@@ -10,7 +10,7 @@ This Comtainer can read any stream VLC can read and acceppts multiple clients.
 It outputs the stream on: http://127.0.0.1:8080/
 
 ## Example docker-compose:
-```dockerfile
+```yml
 version: "3"
 services:
   app:
