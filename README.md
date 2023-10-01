@@ -6,6 +6,7 @@
 # VLC-Video-Repeater
 
 This Comtainer can read any stream VLC can read and acceppts multiple clients.
+Originally programmed to Make ESP32-CAM able to servme Multiple clients but may be used for other things, too!
 
 It outputs the stream on: http://127.0.0.1:8080/
 
@@ -19,10 +20,5 @@ services:
       - SourceURL=https://192.168.0.69/aStream
     ports:
       - 8080:8080
-    healthcheck: # Healthcheck is mandatory for the container to work propperly (especially reconnects!)
-      test: pwsh /app/check.ps1
-      interval: 10s
-      timeout: 10s
-      retries: 3
     restart: unless-stopped
 ```

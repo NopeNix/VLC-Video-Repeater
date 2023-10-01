@@ -7,7 +7,6 @@ ENV DISPLAY=:0.0
 
 RUN mkdir /app
 COPY ./script.ps1 /app/script.ps1
-COPY ./check.ps1 /app/check.ps1
 
 #ENTRYPOINT cvlc
 CMD pwsh /app/script.ps1
