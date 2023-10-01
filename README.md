@@ -17,7 +17,7 @@ services:
   app:
     image: nopenix/vlc-video-repeater
     environment:
-      - SourceURL=https://192.168.0.69/aStream
+      - SourceURL=https://192.168.0.69/a-Stream
     ports:
       - 8080:8080
     restart: unless-stopped
